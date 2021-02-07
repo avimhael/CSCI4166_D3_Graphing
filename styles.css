@@ -1,4 +1,4 @@
-.project {
+.donut {
   background-color: skyblue;
 }
 
@@ -62,4 +62,12 @@
     position: absolute;
     left: 1100px;
     top: 50px;
+  }
+
+  hr {
+    border-top: 6px solid black;
+    width: 500px;
+    position: absolute;
+    left: 300px;
+    top: 550px;
   }
