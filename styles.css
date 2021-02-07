@@ -1,5 +1,5 @@
 .project {
-    background-color:skyblue;
+  background-color: skyblue;
 }
 
 .title {
@@ -8,9 +8,58 @@
     font-weight: 700;
 }
 .legend {                                              
-    font-size: 12px;
+    font-size: 18px;
+    font-weight:bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
   }                                                   
   rect {                                           
     stroke-width: 2;                             
-  }                                                 
+  }
+  .legendtext1 {
+    margin: auto;
+    position: absolute;
+    top: 132px;
+    font-size: 14px;
+    left: 664px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
+  }
+  .legendtext2 {
+    margin: auto;
+    position: absolute;
+    top: 187px;
+    font-size: 14px;
+    left: 664px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
+  }                                           
+  .legendtext3 {
+    margin: auto;
+    position: absolute;
+    top: 242px;
+    font-size: 14px;
+    left: 664px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
+  }                                           
+  .legendtext4 {
+    margin: auto;
+    position: absolute;
+    top: 297px;
+    font-size: 14px;
+    left: 664px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
+  }                                           
+  .legendtext5 {
+    margin: auto;
+    position: absolute;
+    top: 352px;
+    font-size: 14px;
+    left: 664px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
+  }    
+  
+  .vl {
+    border-left: 6px solid black;
+    height: 500px;
+    position: absolute;
+    left: 1100px;
+    top: 50px;
+  }

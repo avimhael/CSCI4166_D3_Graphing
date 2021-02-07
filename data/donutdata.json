@@ -1,0 +1,8 @@
+[
+    {"name": "Critical Impact","total": 100,"Percent":1.39},
+    {"name": "Significant Impact","total": 1500,"Percent":20.83},
+    {"name": "Limited Impact","total": 4100,"Percent":56.94},
+    {"name": "No Impact","total": 400,"Percent":5.56},
+    {"name": "Positive Impact","total": 1100,"Percent":15.28}
+
+    ]
