@@ -57,20 +57,3 @@
     left: 664px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
   }    
-  
-  .vl {
-    border-left: 6px solid black;
-    height: 500px;
-    position: absolute;
-    left: 1100px;
-    top: 50px;
-  }
-
-  hr {
-    border-top: 6px solid black;
-    width: 500px;
-    position: absolute;
-    left: 300px;
-    top: 550px;
-  }
-  

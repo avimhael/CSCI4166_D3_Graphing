@@ -24,13 +24,13 @@ const pie = d3.pie().sort(null).value(data=>data.total)
 
 // get data from JSON
 function getData() {
-    d3.json("./data/donutdata.json", function(d) {return d}).then(drawPie)
+    d3.json("./data/donutdata.json", function(d) {return d}).then(drawDonut)
 }
 
 getData()
 
 //draw the pie chart
-function drawPie(data) {
+function drawDonut(data) {
     colourScale.domain(data.map(d=>d.name))
     const angles = pie(data)
     const paths = pieCanvas.selectAll("path").data(angles)

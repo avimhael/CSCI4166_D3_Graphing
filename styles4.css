@@ -1,0 +1,19 @@
+.bg {
+    width:100%;
+	position: absolute;
+	z-index: -1;
+    padding:50px;
+}
+
+.businfo {
+    position: absolute;
+    top:38px;
+    left:45px;
+    padding:20px; 
+}
+
+.businesstime {
+    height:200px;
+    width:200px;
+    size:40%;
+}
