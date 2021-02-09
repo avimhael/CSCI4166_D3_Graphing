@@ -5,14 +5,14 @@
 const project = d3.select(".donut")
 const svg = project.append("svg").attr("width",900).attr("height",600)
 const margin = {top:20,right:20,bottom:70,left:70}
-const graphWidth = 600-margin.left - margin.right
+const graphWidth = 500-margin.left - margin.right
 const graphHeight = 600 - margin.top - margin.bottom
-const arcPath = d3.arc().outerRadius(190).innerRadius(70)
-const legendRectSize = 30;                                 
+const arcPath = d3.arc().outerRadius(100).innerRadius(30)
+const legendRectSize = 20;                                 
 const legendSpacing = 25;  
 
 // title
-svg.append("text").attr("class","title").attr("dy","10%").attr("dx","5%").text("Impact of COVID-19 on Business")
+svg.append("text").attr("class","title").attr("dy","20%").attr("dx","19%").text("Impact of COVID-19 on Business")
                   .attr("fill", "black")
 
 // choose colour scheme
@@ -42,7 +42,7 @@ function drawDonut(data) {
            const height = legendRectSize + legendSpacing          
            const offset =  height * colourScale.domain().length / 2   
            const horz = 20 * legendRectSize                       
-           const vert = i * height - offset + 260                      
+           const vert = i * height - offset + 280                      
            return 'translate(' + horz + ',' + vert + ')'});  
 
     legend.append('rect').attr('width', legendRectSize).attr('height', legendRectSize)                        

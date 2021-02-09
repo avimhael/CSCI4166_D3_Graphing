@@ -2,25 +2,25 @@
 //CSCI 4166.03 Visualization
 //Winter 2021
 
-const project = d3.select(".pie")
-const svg = project.append("svg").attr("width",1000).attr("height",600)
-const margin = {top:20,right:20,bottom:70,left:70}
-const graphWidth = 600-margin.left - margin.right
-const graphHeight = 600 - margin.top - margin.bottom
-const arcPath = d3.arc().outerRadius(190).innerRadius(0)
-const legendRectSize = 30;                                 
-const legendSpacing = 10;  
+const project1 = d3.select(".pie")
+const svg1 = project1.append("svg").attr("width",900).attr("height",600)
+const margin1 = {top:20,right:20,bottom:70,left:70}
+const graphWidth1 = 600-margin1.left - margin1.right
+const graphHeight1 = 600 - margin1.top - margin.bottom
+const arcPath1 = d3.arc().outerRadius(100).innerRadius(0)
+const legendRectSize1 = 20;                                
+const legendSpacing1 = 10;  
 
 // title
-svg.append("text").attr("class","title").attr("dy","10%").attr("dx","5%").text("Most are cautious about business recovery time")
+svg1.append("text").attr("class","titlepie").attr("dy","18%").attr("dx","19%").text("Most are cautious about business recovery time")
                   .attr("fill", "black")
 
 // choose colour scheme
-const colourScale = d3.scaleOrdinal(d3["schemeDark2"])
+const colourScale1 = d3.scaleOrdinal(d3["schemeDark2"])
 // set up a canvas and the pie chart
-const pieCanvas = svg.append("g").attr("width",graphWidth/2).attr("height",graphWidth/2)
-                                 .attr("transform", `translate(${margin.left + 200},${margin.top + 250})`)
-const pie = d3.pie().sort(null).value(data=>data.total)
+const pieCanvas1 = svg1.append("g").attr("width",graphWidth1/2).attr("height",graphWidth1/2)
+                                 .attr("transform", `translate(${margin1.left + 200},${margin1.top + 250})`)
+const pie1 = d3.pie().sort(null).value(data=>data.total)
 
 // get data from JSON
 function getData() {
@@ -31,23 +31,23 @@ getData()
 
 //draw the pie chart
 function drawPie(data) {
-    colourScale.domain(data.map(d=>d.name))
-    const angles = pie(data)
-    const paths = pieCanvas.selectAll("path").data(angles)
-    paths.enter().append("path").attr("d", arcPath).attr("class","arc")
+    colourScale1.domain(data.map(d=>d.name))
+    const angles1 = pie(data)
+    const paths1 = pieCanvas1.selectAll("path").data(angles1)
+    paths1.enter().append("path").attr("d", arcPath1).attr("class","arc")
                  .attr("stroke","white").attr("fill", d=>colourScale(d.data.name))
     //add legend
-    const legend = svg.selectAll('.legend').data(colourScale.domain()).enter().append('g')                                          
-          .attr('class', 'legend').attr('transform', function(d, i) {                    
-           const height = legendRectSize + legendSpacing          
-           const offset =  height * colourScale.domain().length / 3
-           const horz = 20 * legendRectSize                       
-           const vert = i * height - offset + 260                      
-           return 'translate(' + horz + ',' + vert + ')'});  
+    const legend1 = svg1.selectAll('.legendpie').data(colourScale1.domain()).enter().append('g')                                          
+          .attr('class', 'legendpie').attr('transform', function(d, i) {                    
+           const height1 = legendRectSize1 + legendSpacing1          
+           const offset1 =  height1 * colourScale1.domain().length / 3
+           const horz1 = 19 * legendRectSize1                       
+           const vert1 = i * height1 - offset1 + 250                      
+           return 'translate(' + horz1 + ',' + vert1 + ')'});  
 
-    legend.append('rect').attr('width', legendRectSize).attr('height', legendRectSize)                        
-          .style('fill', colourScale).style('stroke', colourScale)                      
+    legend1.append('rect').attr('width', legendRectSize1).attr('height', legendRectSize1)                        
+          .style('fill', colourScale1).style('stroke', colourScale1)                      
           
-    legend.append('text').attr('x', legendRectSize + legendSpacing)           
-          .attr('y', legendRectSize - legendSpacing).text(function(d) { return d })                      
+    legend1.append('text').attr('x', legendRectSize1 + legendSpacing1)           
+          .attr('y', legendRectSize1 - legendSpacing1).text(function(d) { return d })                      
       }

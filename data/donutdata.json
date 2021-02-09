@@ -1,8 +1,8 @@
 [
-    {"name": "Critical Impact","desc":"Businesses may have to close permanently","total": 100,"Percent":1.39},
-    {"name": "Significant Impact","desc":"Critical threat to business that can be mitigated","total": 1500,"Percent":20.83},
-    {"name": "Limited Impact","desc":"minimal threat to business","total": 4100,"Percent":56.94},
-    {"name": "No Impact","desc":"no threat to business","total": 400,"Percent":5.56},
-    {"name": "Positive Impact","desc":"can be seen as an opportunity for business","total": 1100,"Percent":15.28}
+    {"name": "Critical Impact","desc":"Businesses may have to close permanently","total": 4},
+    {"name": "Significant Impact","desc":"Critical threat to business that can be mitigated","total": 66},
+    {"name": "Limited Impact","desc":"minimal threat to business","total": 13},
+    {"name": "No Impact","desc":"no threat to business","total": 22},
+    {"name": "Positive Impact","desc":"can be seen as an opportunity for business","total": 15}
 
     ]
