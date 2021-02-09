@@ -22,7 +22,7 @@ const pieCanvas = svg.append("g").attr("width",graphWidth/2).attr("height",graph
                                  .attr("transform", `translate(${margin.left + 200},${margin.top + 250})`)
 const pie = d3.pie().sort(null).value(data=>data.total)
 
-// get data from CSV
+// get data from JSON
 function getData() {
     d3.json("./data/donutdata.json", function(d) {return d}).then(drawPie)
 }

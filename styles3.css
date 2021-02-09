@@ -1,0 +1,35 @@
+.line {
+  background:skyblue;
+  width:1000px;
+  height:300;
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 500px;
+  position: absolute;
+  left: 990px;
+  top: 50px;
+}
+
+hr {
+  border-top: 6px solid black;
+  width: 500px;
+  position: absolute;
+  left: 300px;
+  top: 290px;
+}
+
+.xaxis {
+  font-size: 14px;
+  font-weight:bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
+
+}
+
+.yaxis {
+  font-size: 14px;
+  font-weight:bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                               
+
+}
