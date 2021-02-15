@@ -13,21 +13,21 @@ var sym3 =  d3.symbol().type(d3.symbolTriangle).size(500);
     d3.select("#mysvg5") 
         .append("path") 
         .attr("d", sym3) 
-        .attr("fill", "#32cbcd") 
+        .attr("fill", "#2AE7D1") 
         .attr("transform", "translate(880, 210)"); 
 
 var sym4 =  d3.symbol().type(d3.symbolTriangle).size(500); 
     d3.select("#mysvg5") 
         .append("path") 
         .attr("d", sym4) 
-        .attr("fill", "#32cbcd") 
+        .attr("fill", "#2AE7D1") 
         .attr("transform", "translate(880, 290)"); 
 
 var sym5 =  d3.symbol().type(d3.symbolTriangle).size(500); 
     d3.select("#mysvg5") 
         .append("path") 
         .attr("d", sym5) 
-        .attr("fill", "#32cbcd") 
+        .attr("fill", "#2AE7D1") 
         .attr("transform", "translate(880, 390)"); 
 
 // title

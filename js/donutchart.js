@@ -16,7 +16,7 @@ svg.append("text").attr("class","title").attr("dy","20%").attr("dx","19%").text(
                   .attr("fill", "black")
 
 // choose colour scheme
-const colourScale = d3.scaleOrdinal(d3["schemeDark2"])
+const colourScale1 = d3.scaleOrdinal(["#253534","#2AE7D1","#B3AEB2","#595758","#1A92E9"])
 // set up a canvas and the pie chart
 const pieCanvas = svg.append("g").attr("width",graphWidth/2).attr("height",graphWidth/2)
                                  .attr("transform", `translate(${margin.left + 190},${margin.top + 275})`)
@@ -26,27 +26,26 @@ const pie = d3.pie().sort(null).value(data=>data.total)
 function getData() {
     d3.json("./data/donutdata.json", function(d) {return d}).then(drawDonut)
 }
-
 getData()
 
 //draw the pie chart
 function drawDonut(data) {
-    colourScale.domain(data.map(d=>d.name))
+    colourScale1.domain(data.map(d=>d.name))
     const angles = pie(data)
     const paths = pieCanvas.selectAll("path").data(angles)
     paths.enter().append("path").attr("d", arcPath).attr("class","arc")
-                 .attr("stroke","white").attr("fill", d=>colourScale(d.data.name))
+                 .attr("stroke","white").attr("fill", d=>colourScale1(d.data.name))
     //add legend
-    const legend = svg.selectAll('.legend').data(colourScale.domain()).enter().append('g')                                          
+    const legend = svg.selectAll('.legend').data(colourScale1.domain()).enter().append('g')                                          
           .attr('class', 'legend').attr('transform', function(d, i) {                    
            const height = legendRectSize + legendSpacing          
-           const offset =  height * colourScale.domain().length / 2   
+           const offset =  height * colourScale1.domain().length / 2   
            const horz = 15 * legendRectSize                       
            const vert = i * height - offset + 310                    
            return 'translate(' + horz + ',' + vert + ')'});  
 
     legend.append('rect').attr('width', legendRectSize).attr('height', legendRectSize)                        
-          .style('fill', colourScale).style('stroke', colourScale)                      
+          .style('fill', colourScale1).style('stroke', colourScale1)                      
           
     legend.append('text').attr('x', legendRectSize + legendSpacing)           
           .attr('y', legendRectSize - legendSpacing).text(function(d) { return d }).style("font-weight","bold").style("font-size","20")                       

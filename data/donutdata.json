@@ -2,7 +2,7 @@
     {"name": "Critical Impact","desc":"Businesses may have to close permanently","total": 4},
     {"name": "Significant Impact","desc":"Critical threat to business that can be mitigated","total": 66},
     {"name": "Limited Impact","desc":"minimal threat to business","total": 13},
-    {"name": "No Impact","desc":"no threat to business","total": 22},
+    {"name": "No Impact","desc":"no threat to business","total": 2},
     {"name": "Positive Impact","desc":"can be seen as an opportunity for business","total": 15}
 
     ]

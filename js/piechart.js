@@ -18,7 +18,7 @@ svg1.append("text").attr("class","titlepie1").attr("dy","21%").attr("dx","20%").
                   .attr("fill", "black")
 
 // choose colour scheme
-const colourScale1 = d3.scaleOrdinal(d3["schemeDark2"])
+const colourScale = d3.scaleOrdinal(["#212121","#118BF0","#575757","#2BE8D2","#D6D6D6","#B3B3B3"])
 // set up a canvas and the pie chart
 const pieCanvas1 = svg1.append("g").attr("width",graphWidth1/2).attr("height",graphWidth1/2)
                                  .attr("transform", `translate(${margin1.left + 220},${margin1.top + 270})`)

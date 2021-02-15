@@ -13,9 +13,8 @@
 
 .downloadbtn {
     position:absolute;
-    /* left:50px; */
     top: 21px;
-    background-color:#32cbcd; 
+    background-color:#2AE7D1;
     width:370px;
     border: none;
     color: black;
@@ -109,7 +108,7 @@
                                         
 rect {                                           
     stroke-width: 2;   
-    fill:#32cbcd;                      
+    fill:#2AE7D1;                   
 }
 
 .legendtext1, .legendtext2, .legendtext3, .legendtext4, .legendtext5 {
