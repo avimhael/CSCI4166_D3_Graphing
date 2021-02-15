@@ -8,7 +8,7 @@ const margin = {top:20,right:20,bottom:70,left:70}
 const graphWidth = 500-margin.left - margin.right
 const graphHeight = 600 - margin.top - margin.bottom
 const arcPath = d3.arc().outerRadius(100).innerRadius(30)
-const legendRectSize = 20;                                 
+const legendRectSize = 25;                                 
 const legendSpacing = 25;  
 
 // title
@@ -19,7 +19,7 @@ svg.append("text").attr("class","title").attr("dy","20%").attr("dx","19%").text(
 const colourScale = d3.scaleOrdinal(d3["schemeDark2"])
 // set up a canvas and the pie chart
 const pieCanvas = svg.append("g").attr("width",graphWidth/2).attr("height",graphWidth/2)
-                                 .attr("transform", `translate(${margin.left + 200},${margin.top + 250})`)
+                                 .attr("transform", `translate(${margin.left + 190},${margin.top + 275})`)
 const pie = d3.pie().sort(null).value(data=>data.total)
 
 // get data from JSON
@@ -41,13 +41,13 @@ function drawDonut(data) {
           .attr('class', 'legend').attr('transform', function(d, i) {                    
            const height = legendRectSize + legendSpacing          
            const offset =  height * colourScale.domain().length / 2   
-           const horz = 20 * legendRectSize                       
-           const vert = i * height - offset + 280                      
+           const horz = 15 * legendRectSize                       
+           const vert = i * height - offset + 310                    
            return 'translate(' + horz + ',' + vert + ')'});  
 
     legend.append('rect').attr('width', legendRectSize).attr('height', legendRectSize)                        
           .style('fill', colourScale).style('stroke', colourScale)                      
           
     legend.append('text').attr('x', legendRectSize + legendSpacing)           
-          .attr('y', legendRectSize - legendSpacing).text(function(d) { return d })                      
+          .attr('y', legendRectSize - legendSpacing).text(function(d) { return d }).style("font-weight","bold").style("font-size","20")                       
       }

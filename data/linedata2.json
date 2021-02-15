@@ -1,0 +1,20 @@
+{
+    
+    "BMW":
+    
+        [
+            {"age":"18-24","gender":"male","interactions":21600},
+            {"age":"18-24","gender":"female","interactions":-5500},
+            {"age":"25-34","gender":"male","interactions":19500},
+            {"age":"25-34","gender":"female","interactions":-5000},
+            {"age":"35-44","gender":"male","interactions":10700},
+            {"age":"35-44","gender":"female","interactions":-3500},
+            {"age":"45-54","gender":"male","interactions":5700},
+            {"age":"45-54","gender":"female","interactions":-2400},
+            {"age":"55-64","gender":"male","interactions":2500},
+            {"age":"55-64","gender":"female","interactions":-1100},
+            {"age":"65+","gender":"male","interactions":1600},
+            {"age":"65+","gender":"female","interactions":-600}
+        ]
+        
+}
