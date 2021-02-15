@@ -46,4 +46,22 @@ const textCanvas5 = svg5.append("g").attr("width",graphWidth5/2).attr("height",g
 // get data from JSON
 d3.json("./data/textdata2.json").then(function(data) {
 
+    d3.select("#mysvg5") 
+    .append("text") 
+    .text(data[0].value + "%")
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(760, 215)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+
+    d3.select("#mysvg5") 
+    .append("text") 
+    .text(data[1].value + "%")
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(760, 295)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+
+    d3.select("#mysvg5") 
+    .append("text") 
+    .text(data[2].value + "%")
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(760, 395)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+
 });

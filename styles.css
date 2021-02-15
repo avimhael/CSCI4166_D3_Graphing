@@ -3,14 +3,11 @@
     position:relative;
     padding:50px;
 }
-
 .download {
     position:absolute;
     left:90px;
     top:1000px;
-
 }
-
 .downloadbtn {
     position:absolute;
     top: 21px;
@@ -26,26 +23,22 @@
     padding-right: 10px;
     padding-top:20px;
     padding-bottom:20px;
-
 }
-
 .businfo {
     top:38px;
     left:45px;
     position:absolute;
     padding:20px; 
 }
-
 .text1, .text2, .text3, .donut {
     width:1000px;
     position:absolute;
+    font-family: 'Pluto Sans';
 }
-
 .text1 {
     margin-left:800px;
     margin-top:-1500px;
 }
-
 .text2 {
     margin-left:1050px;
     margin-top:-1000px;
@@ -74,6 +67,13 @@
     margin-left:550px;
 }
 
+.line2 {
+    position:absolute;
+    margin-top:-900px;
+    margin-left:550px;
+    width:1100px;
+}
+
 .pie {
     width:1000px;
     height:600px;
@@ -89,7 +89,7 @@
     color:#4F5552;
 }
 
-.linetitle1, .linetitle2 {
+.linetitle1, .linetitle2, .linetitle3 {
     font-size:xx-large;
     font-family: 'Pluto Sans';
     font-weight: 700;
@@ -104,6 +104,20 @@
 
 .linetitle2 {
     top:1070px;
+}
+
+.linetitle3 {
+    top:550px;
+}
+
+.linetitle4 {
+    top:590px;
+    left: 575px;
+    font-size:20px;
+    font-family: 'Pluto Sans';
+    color:#4F5552;
+    position: absolute;
+    font-style:italic;  
 }
                                         
 rect {                                           
@@ -159,7 +173,7 @@ rect {
 }
 
 .xaxis, .yaxis {
-    font-size: 15px;
+    font-size: 12px;
     font-weight:bolder;
     font-family: 'Pluto Sans';                          
 }
@@ -169,7 +183,8 @@ text {
     font-weight: bold;
 }
 
-.subtext1 {
+.subtext1, .subtext2, .subtext3, .subtext4, .subtext5, .subtext6, .subtext7, .subtext8,
+.subtext9, .subtext10, .subtext11, .subtext12, .subtext13, .subtext14 {
     font-size: 18px;
     margin: auto;
     position: absolute;
@@ -177,138 +192,59 @@ text {
     left: 298px;
     font-weight: bold;
     color:#4F5552;
-    font-family: 'Pluto Sans'  ;                           
+    font-family: 'Pluto Sans';                           
 }                                           
 .subtext2 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
     top: 240px;
-    left: 298px;
-    font-weight: bold;
-    color:#4F5552;
-    font-family: 'Pluto Sans' ;                             
+    left: 298px;                       
 }                                           
 .subtext3 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
     top: 260px;
-    font-weight: bold;
-    color:#4F5552;
-    left: 298px;
-    font-family: 'Pluto Sans'   ;                            
+    left: 298px;                    
 }  
 .subtext4 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    color:#4F5552;
     top: 300px;
-    font-weight: bold;
-    left: 298px;
-    font-family: 'Pluto Sans'  ;                            
+    left: 298px;                   
 }                                           
 .subtext5 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
-    color:#4F5552;
     top: 320px;
-    left: 298px;
-    font-family: 'Pluto Sans' ;                              
+    left: 298px;                         
 }                                           
 .subtext6 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 340px;
-    left: 298px;
-    color:#4F5552;
-    font-family: 'Pluto Sans'   ;                           
+    left: 298px;                          
 }  
 .subtext7 {
-    font-size: 18px;
-    margin: auto;
-    font-weight: bold;
-    position: absolute;
     top: 380px;
-    left: 298px;
-    color:#4F5552;
-    font-family: 'Pluto Sans'   ;                            
+    left: 298px;                    
 }                                           
 .subtext8 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 400px;
-    left: 298px;
-    color:#4F5552;
-    font-family: 'Pluto Sans'   ;                             
+    left: 298px;                       
 }                                           
 .subtext9 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 420px;
-    left: 298px;
-    color:#4F5552;
-    font-family: 'Pluto Sans';                                
+    left: 298px;                      
 }  
-
 .subtext10 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 180px;
-    left: 495px;
-    color:#4F5552;
-    font-family: 'Pluto Sans';                                
+    left: 495px;                          
 }  
 .subtext11 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 250px;
-    color:#4F5552;
-    left: 495px;
-    font-family: 'Pluto Sans';                                
+    left: 495px;                            
 }  
 .subtext12 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 275px;
-    color:#4F5552;
-    left: 495px;
-    font-family: 'Pluto Sans';                                
+    left: 495px;                           
 }  
 .subtext13 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 345px;
-    color:#4F5552;
-    left: 495px;
-    font-family: 'Pluto Sans';                                
+    left: 495px;                       
 }  
 .subtext14 {
-    font-size: 18px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
     top: 370px;
-    color:#4F5552;
-    left: 495px;
-    font-family: 'Pluto Sans';                                
+    left: 495px;                              
 }  
 
 .hr1, .hr2, .hr3, .hr4 {
@@ -338,4 +274,15 @@ text {
     position: absolute;
 }
 
+.bar--positive {
+    fill: #2AE7D1;
+}
+.bar--negative {
+    fill:#1A92E9;
+}
+.axis path, .axis line {
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
 

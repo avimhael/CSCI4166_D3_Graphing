@@ -1,8 +1,8 @@
 [
-    {"desc": "Significant decline","total": 68},
-    {"desc": "Marginal decline","total": 27},
-    {"desc": "No change","total": 3},
-    {"desc": "Marginal increase","total": 2}
+    {"value": 68,"desc": "Significant decline"},
+    {"value": 27,"desc": "Marginal decline"},
+    {"value": 3,"desc": "No change"},
+    {"value": 2,"desc": "Marginal increase"}
 
 
     ]

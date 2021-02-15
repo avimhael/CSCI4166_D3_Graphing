@@ -16,6 +16,7 @@ var sym =  d3.symbol().type(d3.symbolTriangle).size(500);
         .attr("fill", "#2AE7D1") 
         .attr("transform", "translate(670, 275)"); 
 
+
 var sym2 =  d3.symbol().type(d3.symbolTriangle).size(500); 
     d3.select("#mysvg4") 
         .append("path") 
@@ -28,7 +29,7 @@ var sym3 =  d3.symbol().type(d3.symbolTriangle).size(500);
         .append("path") 
         .attr("d", sym3) 
         .attr("fill", "#2AE7D1") 
-        .attr("transform", "translate(670, 435)"); 
+        .attr("transform", "translate(670, 435)");   
 
 // title
 svg4.append("text").attr("class","titletext1").attr("dy","20%").attr("dx","33%").text("Market disruption will")
@@ -46,12 +47,23 @@ const textCanvas = svg4.append("g").attr("width",graphWidth4/2).attr("height",gr
 // get data from JSON
 d3.json("./data/textdata.json").then(function(data) {
 
-    // d3.select("#mysvg4")
-    //     .data(data)
-    //     .enter()
-    //     .append("textjson1")
-    //     .text(function(d) {
-    //         return d.value[0];
-    //     });
+
+    d3.select("#mysvg4") 
+    .append("text") 
+    .text(data[0].value + "%")
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(550, 280)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+
+    d3.select("#mysvg4") 
+    .append("text") 
+    .text(data[1].value + "%")
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(550, 360)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+
+    d3.select("#mysvg4") 
+    .append("text") 
+    .text(data[2].value + "%")
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(550, 440)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
 
 });

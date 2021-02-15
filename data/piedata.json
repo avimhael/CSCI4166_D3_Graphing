@@ -1,9 +1,9 @@
 [
-    {"name": "Less than a month","total": 100,"Percent":1.39},
-    {"name": "1-3 months","total": 290,"Percent":20.83},
-    {"name": "3-6 months","total": 400,"Percent":56.94},
-    {"name": "6-12 months","total": 600,"Percent":5.56},
-    {"name": "More than 12 months","total": 300,"Percent":15.28},
-    {"name": "There won't be business as usual","total": 100,"Percent":15.28}
+    {"name": "Less than a month","total": 100,"Percent":6},
+    {"name": "1-3 months","total": 290,"Percent":15},
+    {"name": "3-6 months","total": 400,"Percent":22},
+    {"name": "6-12 months","total": 600,"Percent":35},
+    {"name": "More than 12 months","total": 300,"Percent":16},
+    {"name": "There won't be business as usual","total": 100,"Percent":6}
 
     ]

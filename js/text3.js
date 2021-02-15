@@ -36,12 +36,48 @@ const textCanvas6 = svg6.append("g").attr("width",graphWidth6/2).attr("height",g
 // get data from JSON
 d3.json("./data/textdata3.json").then(function(data) {
 
-    // d3.select("#mysvg6")
-    //     .data(data)
-    //     .enter()
-    //     .append("textjson1")
-    //     .text(function(d) {
-    //         return d.value[0];
-    //     });
 
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[0].value + "%")
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(500, 320)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[0].desc)
+    .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(600, 320)").attr("font-family","Pluto Sans")
+    
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[1].value + "%")
+    .attr("fill", "#1A92E9") 
+    .attr("transform", "translate(500, 400)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[1].desc)
+    .attr("fill", "#1A92E9") 
+    .attr("transform", "translate(600, 395)").attr("font-family","Pluto Sans")
+    
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[2].value + "%")
+    .attr("fill", "#253534") 
+    .attr("transform", "translate(500, 440)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[2].desc)
+    .attr("fill", "#253534") 
+    .attr("transform", "translate(600, 435)").attr("font-family","Pluto Sans")
+    
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[3].value + "%")
+    .attr("fill", "#253534") 
+    .attr("transform", "translate(500, 480)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
+    d3.select("#mysvg6") 
+    .append("text") 
+    .text(data[3].desc)
+    .attr("fill", "#253534") 
+    .attr("transform", "translate(600, 475)").attr("font-family","Pluto Sans")
 });
