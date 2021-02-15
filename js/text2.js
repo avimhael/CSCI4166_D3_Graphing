@@ -14,21 +14,21 @@ var sym3 =  d3.symbol().type(d3.symbolTriangle).size(500);
         .append("path") 
         .attr("d", sym3) 
         .attr("fill", "#32cbcd") 
-        .attr("transform", "translate(880, 200)"); 
+        .attr("transform", "translate(880, 210)"); 
 
 var sym4 =  d3.symbol().type(d3.symbolTriangle).size(500); 
     d3.select("#mysvg5") 
         .append("path") 
         .attr("d", sym4) 
         .attr("fill", "#32cbcd") 
-        .attr("transform", "translate(880, 280)"); 
+        .attr("transform", "translate(880, 290)"); 
 
 var sym5 =  d3.symbol().type(d3.symbolTriangle).size(500); 
     d3.select("#mysvg5") 
         .append("path") 
         .attr("d", sym5) 
         .attr("fill", "#32cbcd") 
-        .attr("transform", "translate(880, 380)"); 
+        .attr("transform", "translate(880, 390)"); 
 
 // title
 svg5.append("text").attr("class","titletext4").attr("dy","10%").attr("dx","55%").text("Collaboration, cloud, and")

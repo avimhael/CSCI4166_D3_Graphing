@@ -46,12 +46,12 @@ const textCanvas = svg4.append("g").attr("width",graphWidth4/2).attr("height",gr
 // get data from JSON
 d3.json("./data/textdata.json").then(function(data) {
 
-    d3.select("#mysvg4")
-        .data(data)
-        .enter()
-        .append("textjson1")
-        .text(function(d) {
-            return d.value[0];
-        });
+    // d3.select("#mysvg4")
+    //     .data(data)
+    //     .enter()
+    //     .append("textjson1")
+    //     .text(function(d) {
+    //         return d.value[0];
+    //     });
 
 });
