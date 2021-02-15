@@ -32,11 +32,11 @@ var sym5 =  d3.symbol().type(d3.symbolTriangle).size(500);
 
 // title
 svg5.append("text").attr("class","titletext4").attr("dy","10%").attr("dx","55%").text("Collaboration, cloud, and")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 svg5.append("text").attr("class","titletext5").attr("dy","16%").attr("dx","55%").text("digitization opportunities")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 svg5.append("text").attr("class","titletext6").attr("dy","22%").attr("dx","55%").text("Anticipated future interest")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 
 
 // set up a canvas and the pie chart

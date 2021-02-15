@@ -26,7 +26,9 @@ d3.json("./data/linedata.json").then(function(data) {
     .domain(data.map(function(d) { return d.desc; })).padding(.2)
 
     svg2.append("g").attr('class', 'xaxis')
-    .call(d3.axisLeft(y2)).style("font-family","Pluto Sans").style("font-size","16")
+    .call(d3.axisLeft(y2)).style("font-family","Pluto Sans").style("font-size","16").style("fill","#4F5552")  
+    
+    const deleteline = svg2.selectAll("path,line").remove();
 
     svg2.selectAll("myGraph").data(data).enter().append("rect")
     .attr("x",x2(0))

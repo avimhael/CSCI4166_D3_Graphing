@@ -32,11 +32,11 @@ var sym3 =  d3.symbol().type(d3.symbolTriangle).size(500);
 
 // title
 svg4.append("text").attr("class","titletext1").attr("dy","20%").attr("dx","33%").text("Market disruption will")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 svg4.append("text").attr("class","titletext2").attr("dy","26%").attr("dx","33%").text("drive innovation")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 svg4.append("text").attr("class","titletext3").attr("dy","32%").attr("dx","33%").text("Agree or Strongly Agree responses")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 
 
 // set up a canvas and the pie chart

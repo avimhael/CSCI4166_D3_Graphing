@@ -36,18 +36,29 @@
     padding:20px; 
 }
 
-.text1 {
+.text1, .text2, .text3, .donut {
     width:1000px;
     position:absolute;
+}
+
+.text1 {
     margin-left:800px;
     margin-top:-1500px;
 }
 
 .text2 {
-    width:1000px;
-    position:absolute;
     margin-left:1050px;
     margin-top:-1000px;
+}
+
+.text3 {
+    margin-left:1050px;
+    margin-top:-1500px;
+}
+
+.donut {
+    margin-left:400px;
+    margin-top:-1500px;
 }
 
 .businesstime {
@@ -55,14 +66,6 @@
     position:absolute;
     padding-left:5px;
 }
-
-.donut {
-    width:1000px;
-    position:absolute;
-    margin-left:400px;
-    margin-top:-1500px;
-}
-
 
 .line {
     position:absolute;
@@ -79,31 +82,28 @@
     margin-top:-550px;
 }
 
-
 .titleline, .titleline2, .titlepie1, .titlepie, .title {
     font-size:xx-large;
     font-family: 'Pluto Sans';
     font-weight: 700;
+    color:#4F5552;
+}
+
+.linetitle1, .linetitle2 {
+    font-size:xx-large;
+    font-family: 'Pluto Sans';
+    font-weight: 700;
+    color:#4F5552;
+    position: absolute;
+    left: 575px;
 }
 
 .linetitle1 {
-    font-size:xx-large;
-    font-family: 'Pluto Sans';
-    font-weight: 700;
-    position: absolute;
-    left: 575px;
     top:1030px;
-
 }
 
 .linetitle2 {
-    font-size:xx-large;
-    font-family: 'Pluto Sans';
-    font-weight: 700;
-    position: absolute;
-    left: 575px;
     top:1070px;
-
 }
                                         
 rect {                                           
@@ -115,6 +115,7 @@ rect {
     margin: auto;
     position: absolute;
     font-size: 13px;
+    color:#4F5552;
     font-family: 'Pluto Sans'; 
 }
 .legendtext1 {
@@ -138,18 +139,20 @@ rect {
     left: 425px;                         
 }   
 
-.titletext1, .titletext2, .titletext4, .titletext5, .titletext6 {
+.titletext1, .titletext2, .titletext4, .titletext5, .titletext6, .titletext7, .titletext8 {
     margin: auto;
     position: absolute;
     font-size:xx-large;
+    color:#4F5552;
     font-family: 'Pluto Sans';
     font-weight: 700;                               
 }          
 
-.titletext3, .titletext6 {
+.titletext3, .titletext6, .titletext9, .titletext10 {
     margin: auto;
     position: absolute;
     font-size:20px;
+    color:#4F5552;
     font-family: 'Pluto Sans';
     font-style:italic;  
 
@@ -173,6 +176,7 @@ text {
     top: 220px;
     left: 298px;
     font-weight: bold;
+    color:#4F5552;
     font-family: 'Pluto Sans'  ;                           
 }                                           
 .subtext2 {
@@ -182,6 +186,7 @@ text {
     top: 240px;
     left: 298px;
     font-weight: bold;
+    color:#4F5552;
     font-family: 'Pluto Sans' ;                             
 }                                           
 .subtext3 {
@@ -190,6 +195,7 @@ text {
     position: absolute;
     top: 260px;
     font-weight: bold;
+    color:#4F5552;
     left: 298px;
     font-family: 'Pluto Sans'   ;                            
 }  
@@ -197,6 +203,7 @@ text {
     font-size: 18px;
     margin: auto;
     position: absolute;
+    color:#4F5552;
     top: 300px;
     font-weight: bold;
     left: 298px;
@@ -207,6 +214,7 @@ text {
     margin: auto;
     position: absolute;
     font-weight: bold;
+    color:#4F5552;
     top: 320px;
     left: 298px;
     font-family: 'Pluto Sans' ;                              
@@ -218,6 +226,7 @@ text {
     font-weight: bold;
     top: 340px;
     left: 298px;
+    color:#4F5552;
     font-family: 'Pluto Sans'   ;                           
 }  
 .subtext7 {
@@ -227,6 +236,7 @@ text {
     position: absolute;
     top: 380px;
     left: 298px;
+    color:#4F5552;
     font-family: 'Pluto Sans'   ;                            
 }                                           
 .subtext8 {
@@ -236,6 +246,7 @@ text {
     font-weight: bold;
     top: 400px;
     left: 298px;
+    color:#4F5552;
     font-family: 'Pluto Sans'   ;                             
 }                                           
 .subtext9 {
@@ -245,6 +256,7 @@ text {
     font-weight: bold;
     top: 420px;
     left: 298px;
+    color:#4F5552;
     font-family: 'Pluto Sans';                                
 }  
 
@@ -255,6 +267,7 @@ text {
     font-weight: bold;
     top: 180px;
     left: 495px;
+    color:#4F5552;
     font-family: 'Pluto Sans';                                
 }  
 .subtext11 {
@@ -263,6 +276,7 @@ text {
     position: absolute;
     font-weight: bold;
     top: 250px;
+    color:#4F5552;
     left: 495px;
     font-family: 'Pluto Sans';                                
 }  
@@ -272,6 +286,7 @@ text {
     position: absolute;
     font-weight: bold;
     top: 275px;
+    color:#4F5552;
     left: 495px;
     font-family: 'Pluto Sans';                                
 }  
@@ -281,6 +296,7 @@ text {
     position: absolute;
     font-weight: bold;
     top: 345px;
+    color:#4F5552;
     left: 495px;
     font-family: 'Pluto Sans';                                
 }  
@@ -290,6 +306,7 @@ text {
     position: absolute;
     font-weight: bold;
     top: 370px;
+    color:#4F5552;
     left: 495px;
     font-family: 'Pluto Sans';                                
 }  
@@ -313,6 +330,12 @@ text {
 .hr4 {
     top: 335px;
     left: 498px;
+}
+.hr5 {
+    top: 335px;
+    left: 498px;
+    width:275px;
+    position: absolute;
 }
 
 

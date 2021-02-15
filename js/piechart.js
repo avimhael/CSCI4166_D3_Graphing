@@ -13,9 +13,9 @@ const legendSpacing1 = 10;
 
 // title
 svg1.append("text").attr("class","titlepie").attr("dy","15%").attr("dx","20%").text("Most are cautious about")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 svg1.append("text").attr("class","titlepie1").attr("dy","21%").attr("dx","20%").text("business recovery time")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 
 // choose colour scheme
 const colourScale = d3.scaleOrdinal(["#212121","#118BF0","#575757","#2BE8D2","#D6D6D6","#B3B3B3"])
@@ -51,5 +51,5 @@ function drawPie(data) {
           .style('fill', colourScale1).style('stroke', colourScale1)                      
           
     legend1.append('text').attr('x', legendRectSize1 + legendSpacing1)           
-          .attr('y', legendRectSize1 - legendSpacing1).text(function(d) { return d }).style("font-family","Pluto Sans").style("font-size","16")                 
+          .attr('y', legendRectSize1 - legendSpacing1).text(function(d) { return d }).style("font-family","Pluto Sans").style("font-size","16").style("fill","#4F5552")                    
       }

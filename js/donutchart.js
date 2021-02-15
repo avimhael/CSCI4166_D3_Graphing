@@ -13,7 +13,7 @@ const legendSpacing = 25;
 
 // title
 svg.append("text").attr("class","title").attr("dy","20%").attr("dx","19%").text("Impact of COVID-19 on Business")
-                  .attr("fill", "black")
+                  .attr("fill", "#4F5552")
 
 // choose colour scheme
 const colourScale1 = d3.scaleOrdinal(["#253534","#2AE7D1","#B3AEB2","#595758","#1A92E9"])
@@ -48,5 +48,5 @@ function drawDonut(data) {
           .style('fill', colourScale1).style('stroke', colourScale1)                      
           
     legend.append('text').attr('x', legendRectSize + legendSpacing)           
-          .attr('y', legendRectSize - legendSpacing).text(function(d) { return d }).style("font-weight","bold").style("font-size","20")                       
+          .attr('y', legendRectSize - legendSpacing).text(function(d) { return d }).style("font-weight","bold").style("font-size","20").style("fill","#4F5552")                 
       }
