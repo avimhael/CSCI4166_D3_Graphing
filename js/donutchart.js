@@ -26,7 +26,7 @@ svg.append("text").attr("class","title").attr("dy","20%").attr("dx","19%").text(
 const colourScale1 = d3.scaleOrdinal(["#253534","#2AE7D1","#B3AEB2","#595758","#1A92E9"])
 // set up a canvas and the pie chart
 const pieCanvas = svg.append("g").attr("width",graphWidth/2).attr("height",graphWidth/2)
-                                 .attr("transform", `translate(${margin.left + 190},${margin.top + 275})`)
+                                 .attr("transform", `translate(${margin.left + 190},${margin.top + 330})`)
 const pie = d3.pie().sort(null).value(data=>data.total)
 
 // get data from JSON
@@ -63,7 +63,7 @@ function drawDonut(data) {
            const height = legendRectSize + legendSpacing          
            const offset =  height * colourScale1.domain().length / 2   
            const horz = 15 * legendRectSize                       
-           const vert = i * height - offset + 310                    
+           const vert = i * height - offset + 370                    
            return 'translate(' + horz + ',' + vert + ')'});  
 
     //append rectangles

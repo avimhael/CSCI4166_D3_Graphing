@@ -1,6 +1,6 @@
-//Matt Ward B00675555
-//CSCI 5566.03 Visualization
-//Winter 2025
+//Matt Ward B00671544
+//CSCI 4166.03 Visualization
+//Winter 2021
 
 const project5 = d3.select(".text2")
 const svg5 = project5.append("svg").attr("width",900).attr("height",600).attr("id","mysvg5")

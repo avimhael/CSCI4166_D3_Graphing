@@ -3,23 +3,23 @@
     "BMW":
     
         [
-            {"age":"Education","gender":"Increase","value":11},
-            {"age":"Education","gender":"Decrease","value":-60},
+            {"desc":"Education","gender":"Increase","value":11},
+            {"desc":"Education","gender":"Decrease","value":-60},
 
-            {"age":"Retail","gender":"Increase","value":9},
-            {"age":"Retail","gender":"Decrease","value":-71},
+            {"desc":"Retail","gender":"Increase","value":9},
+            {"desc":"Retail","gender":"Decrease","value":-71},
 
-            {"age":"Business/Professional Services","gender":"Increase","value":10},
-            {"age":"Business/Professional Services","gender":"Decrease","value":-63},
+            {"desc":"Business/Professional Services","gender":"Increase","value":10},
+            {"desc":"Business/Professional Services","gender":"Decrease","value":-63},
 
-            {"age":"Financial Services","gender":"Increase","value":16},
-            {"age":"Financial Services","gender":"Decrease","value":-49},
+            {"desc":"Financial Services","gender":"Increase","value":16},
+            {"desc":"Financial Services","gender":"Decrease","value":-49},
 
-            {"age":"Government","gender":"Increase","value":32},
-            {"age":"Government","gender":"Decrease","value":-29},
+            {"desc":"Government","gender":"Increase","value":32},
+            {"desc":"Government","gender":"Decrease","value":-29},
 
-            {"age":"Healthcare","gender":"Increase","value":54},
-            {"age":"Healthcare","gender":"Decrease","value":-15}
+            {"desc":"Healthcare","gender":"Increase","value":54},
+            {"desc":"Healthcare","gender":"Decrease","value":-15}
         ]
         
 }

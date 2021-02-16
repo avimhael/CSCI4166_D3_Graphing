@@ -69,8 +69,8 @@
 
 .line2 {
     position:absolute;
-    margin-top:-900px;
-    margin-left:550px;
+    margin-top:-910px;
+    margin-left:460px;
     width:1100px;
 }
 
@@ -82,14 +82,13 @@
     margin-top:-550px;
 }
 
-.titleline, .titleline2, .titlepie1, .titlepie, .title {
+.titleline, .titleline2, .titleline3, .titlepie1, .titlepie, .title {
     font-size:xx-large;
     font-family: 'Pluto Sans';
     font-weight: 700;
     color:#4F5552;
 }
-
-.linetitle1, .linetitle2, .linetitle3 {
+.linetitle1, .linetitle2 {
     font-size:xx-large;
     font-family: 'Pluto Sans';
     font-weight: 700;
@@ -99,20 +98,27 @@
 }
 
 .linetitle1 {
-    top:1030px;
+    top:-70px;
+    left:20px;
 }
 
 .linetitle2 {
-    top:1070px;
+    top:-35px;
+    left:20px;
 }
-
 .linetitle3 {
-    top:550px;
+    top:-60px;
+    left:110px;
+    font-size:xx-large;
+    font-family: 'Pluto Sans';
+    font-weight: 700;
+    color:#4F5552;
+    position: absolute;
 }
 
 .linetitle4 {
-    top:590px;
-    left: 575px;
+    top:-20px;
+    left: 110px;
     font-size:20px;
     font-family: 'Pluto Sans';
     color:#4F5552;
@@ -133,23 +139,23 @@ rect {
     font-family: 'Pluto Sans'; 
 }
 .legendtext1 {
-    top: 180px;
+    top: 240px;
     left: 425px;                            
 }
 .legendtext2 {
-    top: 230px;
+    top: 290px;
     left: 425px;                      
 }                                           
 .legendtext3 {
-    top: 280px;
+    top: 340px;
     left: 425px;                     
 }                                           
 .legendtext4 {
-    top: 330px;
+    top: 390px;
     left: 425px;                      
 }                                           
 .legendtext5 {
-    top: 380px;
+    top: 440px;
     left: 425px;                         
 }   
 
@@ -274,6 +280,28 @@ text {
     position: absolute;
 }
 
+.hr6, .hr7, .hr8, .hr9, .hr10 {
+    position: absolute;
+    width: 900px;
+    left:100px;
+}
+
+.hr6 {
+    top:285px;
+}
+.hr7 {
+    top:240px;
+}
+.hr8 {
+    top:195px;
+}
+.hr9 {
+    top:147px;
+}
+.hr10 {
+    top:102px;
+}
+
 .bar--positive {
     fill: #2AE7D1;
 }
@@ -284,5 +312,5 @@ text {
     fill: none;
     stroke: none;
     shape-rendering: crispEdges;
-}
+  }
 

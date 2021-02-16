@@ -2,7 +2,8 @@
 //CSCI 4166.03 Visualization
 //Winter 2021
 
-const margin2 = {top: 20, right: 30, bottom: 60, left: 250}
+
+const margin2 = {top: 50, right: 30, bottom: 20, left: 250}
 const width2 = 1000 - margin2.left - margin2.right
 const height2 = 370 - margin2.top - margin2.bottom
 
@@ -27,7 +28,7 @@ d3.json("./data/linedata.json").then(function(data) {
 
     //define y axis
     const y2 = d3.scaleBand().range([ 0, height2 ])
-    .domain(data.map(function(d) { return d.desc; })).padding(.2)
+    .domain(data.map(function(d) { return d.desc; })).padding(.3)
     //give y axis some features
     svg2.append("g").attr('class', 'yaxis')
     .call(d3.axisLeft(y2)).style("font-size", 17)
@@ -43,12 +44,11 @@ d3.json("./data/linedata.json").then(function(data) {
     .attr("width", function(d) { return x2(d.total)})
     .attr("height", y2.bandwidth())
 
-    //append percentage values to the end of the rectangles. Not working 100% yet.
-    // They display above the bars but not on each individual bar
+    //append percentage values to the end of the rectangles.
     svg2.selectAll(".line").data(data).enter().append("text")
     .text((d) => { return d.total + "%"})
-    .attr("x", (d) => x2(d.total + 10) +9)
-    .attr("y", (d) => y2(d.desc + 500))
-    .style("font-size",30)
+    .attr("x", (d) => x2(d.total) +9)
+    .attr("y", d => y2(d.desc) + y2.bandwidth())
+    .style("font-size",30).attr("fill", "#2AE7D1").attr("font-weight",100)
 
 })

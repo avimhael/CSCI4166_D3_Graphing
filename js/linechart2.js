@@ -10,40 +10,42 @@ d3.json("./data/linedata2.json").then(function(data) {
 
 function tornadoChart() {
 
-  const margin = {top: 20, right: 30, bottom: 40, left: 100}
-  const width = 450 - margin.left - margin.right
-  const height = 200 - margin.top - margin.bottom
+  const margin = {top: 60, right: 30, bottom: 10, left: 300}
+  const width = 1050 - margin.left - margin.right
+  const height = 355 - margin.top - margin.bottom
 
   const x = d3.scaleLinear().range([0, width]);
 
-  const y = d3.scaleBand().rangeRound([0, height]).padding(0.1);
+  const y = d3.scaleBand().rangeRound([0, height]).padding(0.3);
       
   const xAxis = d3.axisBottom().scale(x)
 
   const yAxis = d3.axisLeft().scale(y)
 
-  const svg = d3.select("body").append("svg")
+  const svg7 = d3.select(".line2").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom).append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
 
   function chart(selection) {
     selection.each(function(data) {
 
       x.domain(d3.extent(data, function(d) { return d.value; }))
-      y.domain(data.map(function(d) { return d.age; }));
+      y.domain(data.map(function(d) { return d.desc; }));
 
       const minvalue = Math.min.apply(Math, data.map(function(d){return d.value;}))
       yAxis.tickPadding(Math.abs(x(minvalue) - x(0)) + 10);
 
-      const bar = svg.selectAll(".bar")
+      const bar = svg7.selectAll(".bar")
           .data(data)
 
       // define that if the value is < 10, it is negative, else positive
       bar.enter().append("rect")
           .attr("class", function(d) { return "bar bar--" + (d.value < 0 ? "negative" : "positive"); })
           .attr("x", function(d) { return x(Math.min(0, d.value)); })
-          .attr("y", function(d) { return y(d.age); })
+          .attr("y", function(d) { return y(d.desc); })
           .attr("width", function(d) { return Math.abs(x(d.value) - x(0)); })
           .attr("height", y.bandwidth())
 
@@ -53,24 +55,24 @@ function tornadoChart() {
               return x(Math.min(0, d.value)) + (Math.abs(x(d.value) - x(0)) / 2);
           })
           .attr("y", function(d,i) {
-              return y(d.age) + (y.bandwidth() / 2);
+              return y(d.desc) + (y.bandwidth() / 2);
           })
           .attr("dy", ".35em")
           .text(function (d) { return d.value; })
 
-      svg.append("g")
+      svg7.append("g")
           .select(".domain")
           .remove()
           .attr("class", "x axis")
           .attr("transform", "translate(0," + height + ")")
           .call(xAxis);
 
-      svg.append("g")
+      svg7.append("g")
           .attr("class", "y axis")
           .attr("transform", "translate(" + x(0) + ",0)")
           .call(yAxis);
     });
-    const deleteline = svg2.selectAll("path,line").remove();
+    const deleteline = svg7.selectAll("path,line").remove();
   }
 
   return chart;

@@ -2,6 +2,7 @@
 //CSCI 4166.03 Visualization
 //Winter 2021
 
+
 const project1 = d3.select(".pie")
 const svg1 = project1.append("svg").attr("width",900).attr("height",600)
 const width=900
