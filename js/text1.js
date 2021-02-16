@@ -1,7 +1,7 @@
 //Matt Ward B00671544
 //CSCI 4166.03 Visualization
 //Winter 2021
-
+// This file is for the top-centre of the image, "market disruption ......""
 
 const project4 = d3.select(".text1")
 const svg4 = project4.append("svg").attr("width",900).attr("height",600).attr("id","mysvg4")
@@ -48,19 +48,21 @@ const textCanvas = svg4.append("g").attr("width",graphWidth4/2).attr("height",gr
 // get data from JSON
 d3.json("./data/textdata.json").then(function(data) {
 
-
+    //significant covid disruption
     d3.select("#mysvg4") 
     .append("text") 
     .text(data[0].value + "%")
     .attr("fill", "#2AE7D1") 
     .attr("transform", "translate(550, 280)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
 
+    //opportunity for innovation
     d3.select("#mysvg4") 
     .append("text") 
     .text(data[1].value + "%")
     .attr("fill", "#2AE7D1") 
     .attr("transform", "translate(550, 360)").style("font-size",32).attr("font-weight",100).attr("font-family","Pluto Sans")
 
+    //need to change model
     d3.select("#mysvg4") 
     .append("text") 
     .text(data[2].value + "%")

@@ -1,7 +1,7 @@
 //Matt Ward B00671544
 //CSCI 4166.03 Visualization
 //Winter 2021
-
+// This file is for the top-right of the image, "office print volumes are in free fall"
 
 const project6 = d3.select(".text3")
 const svg6 = project6.append("svg").attr("width",900).attr("height",600).attr("id","mysvg6")
@@ -11,33 +11,27 @@ const graphHeight6 = 600 - margin6.top - margin.bottom
 
 // Triangles
 var sym6 =  d3.symbol().type(d3.symbolTriangle).size(500); 
-    d3.select("#mysvg6") 
-        .append("path") 
-        .attr("d", sym6) 
-        .attr("fill", "#2AE7D1") 
-        .attr("transform", "translate(760, 310) rotate(180)"); 
+    d3.select("#mysvg6") .append("path") .attr("d", sym6)  .attr("fill", "#2AE7D1") 
+    .attr("transform", "translate(760, 310) rotate(180)"); 
 
-
-
-// title
+// titles and text
 svg6.append("text").attr("class","titletext7").attr("dy","20%").attr("dx","54%").text("Office print volumes")
-                  .attr("fill", "#6F6662")
+            .attr("fill", "#6F6662")
 svg6.append("text").attr("class","titletext8").attr("dy","26%").attr("dx","54%").text("are in free fall")
-                  .attr("fill", "#6F6662")
+            .attr("fill", "#6F6662")
 svg6.append("text").attr("class","titletext9").attr("dy","32%").attr("dx","54%").text("What impact are you seeing")
-                  .attr("fill", "#6F6662")
+            .attr("fill", "#6F6662")
 svg6.append("text").attr("class","titletext10").attr("dy","36%").attr("dx","54%").text("on customer print volumes?")
-                  .attr("fill", "#6F6662")
-
+            .attr("fill", "#6F6662")
 
 // set up a canvas and the pie chart
 const textCanvas6 = svg6.append("g").attr("width",graphWidth6/2).attr("height",graphWidth6/2)
-                                 .attr("transform", `translate(${margin6.left + 220},${margin6.top + 270})`)
+                .attr("transform", `translate(${margin6.left + 220},${margin6.top + 270})`)
 
 // get data from JSON
 d3.json("./data/textdata3.json").then(function(data) {
 
-
+    //teal data/text for significant decline
     d3.select("#mysvg6") 
     .append("text") 
     .text(data[0].value + "%")
@@ -49,6 +43,7 @@ d3.json("./data/textdata3.json").then(function(data) {
     .attr("fill", "#2AE7D1") 
     .attr("transform", "translate(600, 320)").attr("font-family","Pluto Sans")
     
+    //blue data/text for marginal decline
     d3.select("#mysvg6") 
     .append("text") 
     .text(data[1].value + "%")
@@ -60,6 +55,7 @@ d3.json("./data/textdata3.json").then(function(data) {
     .attr("fill", "#1A92E9") 
     .attr("transform", "translate(600, 395)").attr("font-family","Pluto Sans")
     
+    //grey data/text for no change
     d3.select("#mysvg6") 
     .append("text") 
     .text(data[2].value + "%")
@@ -71,6 +67,7 @@ d3.json("./data/textdata3.json").then(function(data) {
     .attr("fill", "#253534") 
     .attr("transform", "translate(600, 435)").attr("font-family","Pluto Sans")
     
+    //grey data/text for marginal increase
     d3.select("#mysvg6") 
     .append("text") 
     .text(data[3].value + "%")

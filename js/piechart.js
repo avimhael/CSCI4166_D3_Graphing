@@ -1,7 +1,7 @@
 //Matt Ward B00671544
 //CSCI 4166.03 Visualization
 //Winter 2021
-
+// This file is for the bottom-right of the image, "most are cautious ..."
 
 const project1 = d3.select(".pie")
 const svg1 = project1.append("svg").attr("width",900).attr("height",600)
@@ -22,7 +22,6 @@ const arcPath6 = d3.arc().outerRadius(100).innerRadius(10)
 
 const legendRectSize1 = 25;                                
 const legendSpacing1 = 10;  
-
 
 // title
 svg1.append("text").attr("class","titlepie").attr("dy","15%").attr("dx","20%").text("Most are cautious about")

@@ -1,6 +1,7 @@
 //Matt Ward B00671544
 //CSCI 4166.03 Visualization
 //Winter 2021
+// This file is for the bottom horizontal line graph, "channel partners ....""
 
 
 const margin2 = {top: 50, right: 30, bottom: 20, left: 250}

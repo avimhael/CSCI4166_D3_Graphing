@@ -1,6 +1,7 @@
 //Matt Ward B00671544
 //CSCI 4166.03 Visualization
 //Winter 2021
+// This file is for the top-left of the image, "Impact of COVID-19 .....""
 
 const project = d3.select(".donut")
 const svg = project.append("svg").attr("width",900).attr("height",600)
