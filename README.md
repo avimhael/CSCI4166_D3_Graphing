@@ -6,6 +6,7 @@
 #### This is best run using a local server to view - MAMP or something similar. 
 #### Simple run your server and browse to localhost (or your htdocs folder).
 #### When you have the list of files here, simply browser into the directory and view.
+#### Also hosted on my Github: https://github.com/avimhael/CSCI4166_D3_Graphing
 
 #### File.doc is a dummy file to emulate the downloading of a file via the download button on the left of the page
 
